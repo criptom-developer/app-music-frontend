@@ -21,14 +21,17 @@ body {
 
 header {
     /* border: 0.5px solid white; */
+    width: 90%;
+    margin: auto;
 }
 
-div.cabecera{
+div.cabecera {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 16px;
+    padding: 8px 4px;
+
 }
 
 h1.titulo-menu {
@@ -40,7 +43,7 @@ div.menu {
     display: inline-block;
 }
 
-div.menu button{
+div.menu button {
     background-color: transparent;
     border: none;
 }
@@ -51,7 +54,7 @@ div.menu button i {
 
 
 main {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -69,7 +72,7 @@ div.tarjeta {
     flex-wrap: wrap;
     width: 50%;
     height: 70px;
-    padding: 3px;
+    padding: 4px;
     /* border: 1px solid red; */
 }
 
@@ -80,7 +83,7 @@ div.img-tarjeta {
     background-color: green;
 }
 
-div.img-tarjeta img{
+div.img-tarjeta img {
     width: 100%;
     height: 100%;
 }
@@ -119,40 +122,31 @@ div.caja {
     /* border: 1px solid white; */
 }
 
-div.img-caja-1 {
+div.img-caja-1, div.img-caja-2, div.img-caja-3, div.img-caja-4{
     width: 100%;
     height: 150px;
-    background-image: url('../img/musico1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-div.img-caja-2 {
-    width: 100%;
-    height: 150px;
-    background-image: url('../img/musico2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+div.img-caja-1 {
+    background-image: url('../img/musico1.jpg');
 }
+div.img-caja-2 {
+    background-image: url('../img/musico2.jpg');
+}
+
 div.img-caja-3 {
-    width: 100%;
-    height: 150px;
     background-image: url('../img/musico3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 div.img-caja-4 {
-    width: 100%;
-    height: 150px;
     background-image: url('../img/musico4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-div.texto-caja p:first-child{
+div.texto-caja p:first-child {
     font-size: 15px;
-    margin:0;
+    margin: 0;
 }
 
 div.texto-caja p:last-child {
@@ -160,4 +154,28 @@ div.texto-caja p:last-child {
     margin: 0;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    div.tarjeta {
+        width: 25%;
+    }
+
+    div.img-tarjeta {
+        width: 20%;
+    }
+
+    div.titulo-tarjeta {
+        width: 80%;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    div.caja {
+        width: 25%;
+        height: 300px;
+    }
+
+    div.img-caja-1, div.img-caja-2, div.img-caja-3, div.img-caja-4 {
+        height: 250px;
+    }
+
+}
