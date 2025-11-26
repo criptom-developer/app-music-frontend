@@ -36,7 +36,7 @@ div.cabecera {
 
 h1.titulo-menu {
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 div.menu {
@@ -64,6 +64,7 @@ div.contenedor-tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 
 div.tarjeta {
@@ -71,15 +72,11 @@ div.tarjeta {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
-    height: 70px;
     padding: 4px;
-    /* border: 1px solid red; */
 }
 
 div.img-tarjeta {
-
-    width: 40%;
-    height: 100%;
+    width: 35%;
     background-color: green;
 }
 
@@ -91,17 +88,15 @@ div.img-tarjeta img {
 div.titulo-tarjeta {
     display: flex;
     align-items: center;
-    width: 60%;
-    height: 100%;
+    width: 65%;
     padding: 4px;
     background-color: #252525;
     font-size: 10px;
     font-weight: bold;
-    /* border: 1px solid white; */
 }
 
 h1.titulo-gral-caja {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 div.contenedor-cajas {
@@ -109,6 +104,7 @@ div.contenedor-cajas {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     /* border: 1px solid green; */
 }
 
@@ -118,11 +114,12 @@ div.caja {
     height: 210px;
     padding: 4px;
     white-space: nowrap;
-    /* background-color: orange; */
-    /* border: 1px solid white; */
 }
 
-div.img-caja-1, div.img-caja-2, div.img-caja-3, div.img-caja-4{
+div.img-caja-1,
+div.img-caja-2,
+div.img-caja-3,
+div.img-caja-4 {
     width: 100%;
     height: 150px;
     background-size: cover;
@@ -130,29 +127,65 @@ div.img-caja-1, div.img-caja-2, div.img-caja-3, div.img-caja-4{
 }
 
 div.img-caja-1 {
-    background-image: url('../img/musico1.jpg');
+    background-image: url('../img/section2/musico1.jpg');
 }
+
 div.img-caja-2 {
-    background-image: url('../img/musico2.jpg');
+    background-image: url('../img/section2/musico2.jpg');
 }
 
 div.img-caja-3 {
-    background-image: url('../img/musico3.jpg');
+    background-image: url('../img/section2/musico3.jpg');
 }
 
 div.img-caja-4 {
-    background-image: url('../img/musico4.jpg');
+    background-image: url('../img/section2/musico4.jpg');
 }
 
 div.texto-caja p:first-child {
-    font-size: 15px;
-    margin: 0;
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: bold;
 }
 
 div.texto-caja p:last-child {
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
 }
+
+div.circulo {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+
+    /* background-color: blue; */
+}
+
+div.circulo div.img-caja-1,
+div.circulo div.img-caja-2,
+div.circulo div.img-caja-3,
+div.circulo div.img-caja-4 {
+    border-radius: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+div.circulo div.img-caja-1 {
+    background-image: url('../img/section3/img1.jpg');
+}
+
+div.circulo div.img-caja-2 {
+    background-image: url('../img/section3/img2.jpg');
+}
+
+div.circulo div.img-caja-3 {
+    background-image: url('../img/section3/img3.jpg');
+}
+
+div.circulo div.img-caja-4 {
+    background-image: url('../img/section3/img4.jpg');
+}
+
 
 @media (min-width: 600px) {
     div.tarjeta {
@@ -171,11 +204,16 @@ div.texto-caja p:last-child {
 
     div.caja {
         width: 25%;
-        height: 300px;
+        height: 350px;
     }
 
-    div.img-caja-1, div.img-caja-2, div.img-caja-3, div.img-caja-4 {
-        height: 250px;
+
+    div.img-caja-1,
+    div.img-caja-2,
+    div.img-caja-3,
+    div.img-caja-4 {
+        height: auto;
+        aspect-ratio: 1/1;
     }
 
 }
